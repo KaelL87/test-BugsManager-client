@@ -10,7 +10,7 @@ import { IBug } from "src/store/slices/bugsSlice";
 
 const CardBug: React.FC<{ data: IBug }> = ({ data }) => {
   return (
-    <Card maxW="md" variant="filled" width="100%">
+    <Card maxW="200px" variant="filled" width="100%">
       <CardHeader>
         <Heading size="md">{data.username}</Heading>
       </CardHeader>
