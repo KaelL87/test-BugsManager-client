@@ -1,0 +1,14 @@
+.addBug {
+  min-width: 290px;
+  max-width: 390px;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 23px;
+  height: auto;
+  border-color: var(--chakra-colors-chakra-border-color);
+  border: 2px solid;
+  background-color: var(--chakra-colors-chakra-subtle-bg);
+  p {
+    color: white !important;
+  }
+}

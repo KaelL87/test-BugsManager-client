@@ -1,0 +1,43 @@
+
+.Modal {  
+  position: absolute;
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  @keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+  
+  .back_drop_modal {
+    background: rgba(1, 7, 20, 0.7) !important;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 19;
+    cursor: pointer;
+  }
+  .Modal_wrapper {
+    min-width: 290px;
+    max-width: 450px;
+    width: 100%;
+    position: fixed;
+    border-radius: 5px; 
+    z-index: 20;
+    transform: translate(-50%, -50%) !important;
+    left: 50%;
+    top: 50%;
+    .Modal_content {
+      padding: 1rem;
+      opacity: 0;
+      animation: fadeOut 0.3s linear;
+    }
+    .active_modal{
+      opacity: 1;
+      animation: fadeIn 0.3s linear;
+    }
+  }
+}
