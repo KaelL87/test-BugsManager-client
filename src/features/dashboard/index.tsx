@@ -29,11 +29,11 @@ const Dashboard: React.FC = () => {
     pushModal("AddBugModal");
   };
   const handleFilters = async () => {
-    if(!isFiltered) {
+    if (!isFiltered) {
       pushModal("FiltersModal");
     } else {
       getAllBugs({});
-      dispatch(setIsFiltered(false));      
+      dispatch(setIsFiltered(false));
     }
   };
   const { bugs, addedBug, isFiltered } =
@@ -82,7 +82,7 @@ const Dashboard: React.FC = () => {
             variant="solid"
             onClick={handleFilters}
           >
-            {!isFiltered ? 'Filters' : 'Clear'}
+            {!isFiltered ? "Filters" : "Clear"}
           </Button>
         </Box>
       </Box>
@@ -90,7 +90,7 @@ const Dashboard: React.FC = () => {
         <Wrap justify="space-evenly" spacing="25px">
           {bugs.map((data) => (
             <WrapItem key={data._id}>
-              <Center w="100%" h="100%">
+              <Center alignItems="baseline" w="100%" h="100%">
                 <CardBug data={data} />
               </Center>
             </WrapItem>
